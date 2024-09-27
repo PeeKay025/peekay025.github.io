@@ -1,0 +1,90 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 80px;
+}
+
+#box1{
+    width: 300px;
+    height: 400px;
+    border: solid black;
+    font-size: 15px;
+    text-align: center;
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+}
+
+#box2{
+   width: 300px;
+    height: 400px;
+    border: solid black;
+    font-size: 15px;
+    text-align: center;
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+}
+
+#box3{
+    width: 300px;
+    height: 400px;
+    border: solid black;
+    font-size: 15px;
+    text-align: center;
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+}
+
+#box4{
+    width: 300px;
+    height: 400px;
+    border: solid black;
+    font-size: 15px;
+    text-align: center;
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.boxfloat{
+    display: block;
+    margin-left: 75px;
+    margin-right: 75px;
+    width: 50%;
+
+    float: left
+}
+
+#bx1{
+    height: 250px;
+    width: 300px;
+}
+
+#bx2{
+    height: 250px;
+    width: 300px;
+}
+
+#bx3{
+    height: 250px;
+    width: 300px;
+}
+
+#bx4{
+    height: 250px;
+    width: 300px;
+}
