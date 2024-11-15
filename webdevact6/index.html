@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Patek Philippe | Home</title>
+    <link rel="icon" type="image/x-icon" href="pictures/patek_logo_2_-removebg-preview.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        .carousel-item img {
+            width: 100%;
+            height: 1000px;
+            object-fit: cover;
+        }
+
+        .navText {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #463527;
+        }
+
+        .navbar-brand img {
+            background-color: transparent;
+        }
+
+        .banner-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .banner-image::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, #000000 7%, #ffffff44 100%);
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            max-width: 100%;
+            padding: 0 1rem;
+            z-index: 2;
+        }
+
+        .bannerText {
+            color: white;
+            text-align: center;
+            font-size: clamp(1rem, 4vw, 2rem);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .bg-custom {
+            background-color: #8C7A66;
+        }
+
+        .homePics {
+            width: 270px;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .watchtypeName {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+        }
+
+        .footer {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #8C7A66;
+        }
+
+        .footerText {
+            color: #8C7A66;
+        }
+    </style>
+</head>
+
+<body id="body">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow p-2">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <a class="navbar-brand d-flex flex-column align-items-center" href="#">
+                <img src="pictures/patek_logo_2_-removebg-preview.png" alt="Patek Philippe Logo" width="85" height="80"
+                    class="d-inline-block text-center">
+                <span class="navText fs-2">Patek Philippe</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="banner-image container-fluid p-0 position-relative">
+        <img src="pictures/patekbg2.png" class="img-fluid w-100" alt="Banner Image">
+        <div class="text-overlay">
+            <p class="bannerText">
+                Experience the essence of timeless elegance and unparalleled craftsmanship with Patek Philippe. Each
+                timepiece is a masterpiece, blending innovation with tradition. More than just an instrument of time,
+                our watches are a legacy—passed down through generations, carrying the spirit of precision, artistry,
+                and passion in every tick.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-fluid p-0">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pictures/patekphilippe_5740_1G_001(car1).png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="pictures/patekphilippe_5212A_001(car2).png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="pictures/patekphilippe_5180_1R_001(car3).png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="pictures/patekphilippe_5738R_001(car4).png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="pictures/patekphilippe_7150_250R_001(car5).png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="pictures/patekphilippe_5520P_001(car6).png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="pictures/patekphilippe_5180_1R_001(car7).png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                    <div class="my-3 text-center">
+                        <a href="grand-complications.html"> <!-- Link to Grand Complications page -->
+                            <img src="pictures/gchome.png" alt="Grand Complications" class="homePics">
+                        </a>
+                        <h4 class="watchtypeName">Grand Complications</h4>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                    <div class="my-3 text-center">
+                        <a href="complications.html"> <!-- Link to Complications page -->
+                            <img src="pictures/chome.png" alt="Complications" class="homePics">
+                        </a>
+                        <h4 class="watchtypeName">Complications</h4>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                    <div class="my-3 text-center">
+                        <a href="nautilus.html"> <!-- Link to Nautilus page -->
+                            <img src="pictures/nauthome.png" alt="Nautilus" class="homePics">
+                        </a>
+                        <h4 class="watchtypeName">Nautilus</h4>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                    <div class="my-3 text-center">
+                        <a href="aquanaut.html"> <!-- Link to Aquanaut page -->
+                            <img src="pictures/aquahome.png" alt="Aquanaut" class="homePics">
+                        </a>
+                        <h4 class="watchtypeName">Aquanaut</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-center py-4">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <div class="navbar-brand d-flex flex-column align-items-center">
+                <img src="pictures/patek_logo_2_-removebg-preview.png" alt="Patek Philippe Logo" width="85" height="80">
+                <span class="footerText fs-2">Patek Philippe</span>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="mb-0">© Patek Philippe. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
