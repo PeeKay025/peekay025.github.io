@@ -1,70 +1,210 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prince Karl D. de Grano</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PK | Home</title>
+    <link rel="stylesheet" href="Portfolio/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/tabIcon1.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> <!-- AOS Library -->
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f4f8;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        body,
+        html {
+            overflow-x: hidden;
+            width: 100%;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .banner-image {
+            max-width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .banner-image img {
+            max-width: 100%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .banner-image {
+            background-image: url('images/IMG_7870 (1).jpg');
+            background-size: cover;
+            background-position: center;
             height: 100vh;
-            color: #333;
+            /* Adjust the height for responsiveness */
         }
-        .container {
-            text-align: center;
-            background-color: #fff;
-            padding: 50px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #333;
-        }
-        p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            color: #666;
-        }
-        .buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        .btn {
-            background-color: #007BFF;
-            color: white;
-            padding: 15px 30px;
+
+        a {
+            outline: none;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.1em;
-            transition: background-color 0.3s;
         }
-        .btn:hover {
-            background-color: #0056b3;
+
+        h1 {
+            font-size: 70px;
+        }
+
+        p {
+            font-size: 28px;
+        }
+
+        .btnProject {
+            color: white;
+            background-color: #F3B200;
+            border: none;
+            padding: 10px 20px;
+            font-size: 26px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            width: 200px;
+            font-weight: 600;
+        }
+
+        .btnProject:hover {
+            background-color: #D49A00;
+            transform: scale(1.13);
+        }
+
+        .container-fluid {
+            overflow: hidden;
+        }
+
+        /* Make banner height responsive */
+        @media (max-width: 768px) {
+            .banner-image {
+                height: 60vh;
+                /* Adjust banner height for smaller screens */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .banner-image {
+                height: 50vh;
+                /* Adjust banner height for very small screens */
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 36px;
+                /* Reduce font size of header on smaller screens */
+            }
+
+            .btnProject {
+                font-size: 18px;
+                /* Reduce button font size */
+                width: 150px;
+            }
         }
     </style>
 </head>
-<body>
 
-    <div class="container">
-        <h1>Prince Karl D. de Grano</h1>
-        <p>Welcome to my GitHub page. Click on the activities below to view the projects.</p>
-        <div class="buttons">
-            <a href="https://peekay025.github.io" target="_blank" class="btn">Activity 3</a>
-            <a href="webdev/index.html" target="_blank" class="btn">Activity 4</a>
-            <a href="webdevact5/index.html" target="_blank" class="btn">Activity 5</a>
-            <a href="webdevact6/index.html" target="_blank" class="btn">Activity 6</a>
-            <a href="eldenring/index.html" target="_blank" class="btn">Activity 7</a>
+<body class="bg-black text-white" id="body">
+
+    <nav class="navbar navbar-expand-lg bg-black shadow">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <a class="navIcon navbar-brand d-flex flex-column align-items-center" href="index.html">
+                <img src="images/Icon.png" alt="Patek Philippe Logo" width="220" height="160"
+                    class="d-inline-block text-center">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+        <div class="banner-image">
+            <img src="images/PeeKay.png" alt="PeeKay" class="img-fluid">
         </div>
     </div>
 
+    <div class="descCont container-fluid px-5" id="descCont">
+        <div class="row align-items-center my-5">
+            <div class="col-12 col-md-6 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/image 18.png" class="card-img w-75" alt="...">
+            </div>
+
+            <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="">
+                    <h1><strong>About</strong> <strong style="color: #F3B200;">PK</strong></h1>
+                    <p>Welcome! I’m Prince Karl De Grano, a dedicated student with a deep commitment to mastering
+                        programming—not only as a career but as a way to uplift those around me.</p>
+                    <p>Fueled by resilience and a strong sense of purpose, I pour myself into every line of code and
+                        every hour of study, knowing that each step brings me closer to creating a brighter future.</p>
+                    <p>With each new challenge I take on, I’m one step closer to making a meaningful impact.</p>
+                    <p>Join me on this journey as I work toward making this dream a reality!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <h1 style="font-size: 70px;" data-aos="fade-up"><strong style="color: #F3B200;">PK</strong>s
+                    <strong>Projects</strong></h1>
+            </div>
+            <div class="col-12 col-md-6 mx-auto align-items-center">
+                <button type="button" class="btn btnProject mx-2 my-3" data-aos="fade-up" data-aos-delay="100">Activity
+                    4</button>
+                <button type="button" class="btn btnProject mx-2 my-3" data-aos="fade-up" data-aos-delay="300">Activity
+                    5</button>
+                <button type="button" class="btn btnProject mx-2 my-3" data-aos="fade-up" data-aos-delay="500">Activity
+                    6</button>
+                <button type="button" class="btn btnProject mx-2 my-3" data-aos="fade-up" data-aos-delay="700">Activity
+                    7</button>
+                <button type="button" class="btn btnProject mx-2 my-3" data-aos="fade-up" data-aos-delay="900">Activity
+                    7</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-center py-4">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <a class="navIcon navbar-brand d-flex flex-column align-items-center" href="index.html">
+                <img src="images/Icon.png" alt="pkIcon" width="220" height="160" class="d-inline-block text-center">
+            </a>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-8 mx-auto">
+                <!-- Social Links -->
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fbIcon" class="footIcon mx-3" width="45" height="45">
+                </a>
+
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="igIcon" class="footIcon mx-3" width="45" height="45">
+                </a>
+
+                <a href="https://www.google.com" target="_blank">
+                    <img src="images/google.png" alt="gglIcon" class="footIcon mx-3" width="45" height="45">
+                </a>
+
+                <a href="https://www.github.com" target="_blank">
+                    <img src="images/github.png" alt="gitIcon" class="footIcon mx-3" width="45" height="45">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNFbHIlTm5V7nRl5Kr3zD2UM7j59uJfoPpE6GU64oeAHq9mD"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>

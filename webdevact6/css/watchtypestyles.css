@@ -1,0 +1,95 @@
+.navText {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #463527;
+        }
+
+        .navbar-brand img {
+            background-color: transparent;
+        }
+
+        .banner-image {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 90vh;
+        }
+
+        .banner-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            max-width: 100%;
+            padding: 0 1rem;
+            z-index: 2;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bannerText {
+            color: white;
+            text-align: center;
+            font-size: clamp(1rem, 7vw, 8rem);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.2;
+            text-shadow: 2px 2px #1f1c1c;;
+        }
+
+        .gcPics {
+            object-fit: cover;
+            object-position: bottom center;
+        }
+
+        h4.gcpicsText {
+            color: #463527;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h6.gcpicsText {
+            color: #A8927B;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .my-3.text-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 100%;
+        }
+
+        h1.desc1Text {
+            color: #A8927B;
+            font-weight: 700;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h3.desc2Text {
+            color: #463527;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h5.desc3Text {
+            color: #463527;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .footer {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #8C7A66;
+        }
+
+        .footerText {
+            color: #463527;
+        }
