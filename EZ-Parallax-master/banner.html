@@ -6,7 +6,80 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css" />
 	<link rel="stylesheet" href="parallax.css" />
-	<title>EZ | Banner</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<title>New York</title>
+	<style>
+		body {
+			color: white;
+			font-family: "Montserrat", sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		/* Banner Section Styling */
+		.bnnrCntnt {
+			background: url(https://marriott.cdn.tambourine.com/destinations-promo/media/nyc_lp_q3c2_intro_bkgrnd_092124-66fee4f27d41f.jpg) no-repeat center center;
+			background-size: cover;
+			color: white;
+			padding: 100px 0;
+			max-width: 100%;
+			/* Prevent overflow */
+		}
+
+		.bnnrCntnt h1 {
+			font-size: 3.7rem;
+			/* Adjusted for larger screens */
+			text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+		}
+
+		.bnnrCntnt p {
+			font-size: 1.9rem;
+			/* Slightly smaller font for readability */
+			text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+		}
+
+		/* Flexbox layout for banner content */
+		.bnnrCntnt .row {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+
+		.bnnrCntnt img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		html,
+		body {
+			overflow-x: hidden;
+			/* Hide horizontal scrollbar */
+			width: 100%;
+			/* Ensure body and html take up full viewport width */
+			margin: 0;
+			padding: 0;
+		}
+
+		.container-fluid {
+			max-width: 100%;
+			/* Prevent overflow from container */
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.container-fluid h1 {
+			font-size: 3.8rem;
+			/* Smaller heading for mobile */
+		}
+
+		.container-fluid p {
+			font-size: 1.4rem;
+			/* Smaller paragraph for mobile */
+		}
+	</style>
 </head>
 
 <body>
@@ -14,23 +87,157 @@
 		<div class="keyart" id="parallax">
 			<div class="keyart_layer parallax" id="keyart-0" data-speed="4"></div>
 			<div class="keyart_layer parallax" id="keyart-1" data-speed="16"></div>
-			<div class="keyart_layer parallax" id="keyart-2" data-speed="30"></div>
-			<div class="keyart_layer parallax" id="keyart-3" data-speed="66"></div>
-			<div class="keyart_layer parallax" id="keyart-4" data-speed="100"></div>
+			<div class="keyart_layer parallax" id="keyart-2" data-speed="20"></div>
+			<div class="keyart_layer parallax" id="keyart-3" data-speed="30"></div>
+			<div class="keyart_layer parallax" id="keyart-4" data-speed="66"></div>
+			<div class="keyart_layer parallax" id="keyart-5" data-speed="100"></div>
 		</div>
 	</section>
 
 	<section class="main-content">
-		<div class="container-fluid" style="background-color: white;">
+		<div class="bnnrCntnt container-fluid">
 			<div class="row">
-				<div class="col" style="height: 2000px;">
-					test
+				<!-- Image Column -->
+				<div class="col-md-6 d-flex align-items-center justify-content-center py-4">
+					<img src="contentimgs/banner.png" alt="New York Adventure" style="width: 65%;">
+				</div>
+
+				<!-- Text Column -->
+				<div class="col-md-6 d-flex flex-column justify-content-center text-center">
+					<h1 class="bannerTxt text-white">Discover Your Adventure in New York</h1>
+					<p class="bannerTxt text-white mx-5">From the hustle and bustle of iconic streets to serene winter
+						escapes, New York offers an unforgettable experience in every season. Whether you're exploring
+						world-class museums or taking in the city’s dazzling holiday lights, New York is where memories
+						are made. Join us this fall and winter to see why the city is a dream destination year-round.
+					</p>
 				</div>
 			</div>
 		</div>
+
+		<!-- Additional Content Sections -->
+		<div class="container-fluid" style="background-color: #fff5e4;">
+			<div class="row d-flex align-items-center justify-content-center py-4">
+				<h1 class="text-center py-2" style="color: black;">Central Park: A Winter Wonderland</h1>
+				<img src="contentimgs/cntntimg1.jpg" alt="" style="width: 50%;">
+				<div class="col-8 mt-4">
+					<p class="text-center" style="color: black;">Experience the magical transformation of Central Park
+						in winter. From ice skating at Wollman Rink to taking in the breathtaking views of snow-covered
+						trees, this iconic park is the perfect place for winter activities and moments of tranquility.
+						Explore seasonal events and cozy cafes, and enjoy a winter wonderland in the heart of New York
+						City.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid" style="background-color: #3E1855">
+			<div class="row d-flex align-items-center justify-content-center py-4">
+				<h1 class="text-center py-2" style="color: #fff5e4;">Times Square: The Heart of the City</h1>
+				<img src="contentimgs/cntntimg2.jpg" alt="" style="width: 50%;">
+
+				<div class="col-8 mt-4">
+					<p class="text-center" style="color: #fff5e4;">Times Square is a symbol of New York’s energy and
+						vibrancy.
+						No matter the season, this bustling intersection never sleeps. Whether you're catching a
+						Broadway
+						show, marveling at the flashing billboards, or celebrating the new year with thousands of
+						others,
+						Times Square is a must-see destination for anyone visiting the city.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid" style="background-color: #fff5e4;">
+			<div class="row d-flex align-items-center justify-content-center py-4">
+				<h1 class="text-center py-2" style="color: black;">Explore NoMad and Greenwich Village</h1>
+				<img src="contentimgs/cntntimg3.jpg" alt="" style="width: 50%;">
+
+				<div class="col-8 mt-4">
+					<p class="text-center" style="color: black;">From the sleek hotels of NoMad to the artistic charm of
+						Greenwich Village, these neighborhoods offer a unique blend of history, art, and modern living.
+						Wander through cobblestone streets adorned with festive lights, enjoy rooftop cocktails, and
+						explore
+						the hidden gems of the city’s cultural districts.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid" style="background-color: #3E1855">
+			<div class="row d-flex align-items-center justify-content-center py-4">
+				<h1 class="text-center py-2" style="color: #fff5e4;">Lower Manhattan & Financial District</h1>
+				<img src="contentimgs/cntntimg4.jpg" alt="" style="width: 50%;">
+
+				<div class="col-8 mt-4">
+					<p class="text-center" style="color: #fff5e4;">Lower Manhattan combines the old and the new, from the
+						historic streets of the Financial District to the modern skyscrapers that make up the city's
+						skyline. Visit the 9/11 Memorial, enjoy panoramic views from One World Observatory, or stroll
+						along
+						the scenic waterfront for a peaceful moment amidst the city's vibrant energy.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid" style="background-color: #fff5e4;">
+			<div class="row d-flex align-items-center justify-content-center py-4">
+				<h1 class="text-center py-2" style="color: black;">Brooklyn: Culture and Charm</h1>
+				<img src="contentimgs/cntntimg5.jpg" alt="" style="width: 50%;">
+
+				<div class="col-8 mt-4">
+					<p class="text-center" style="color: black;">Brooklyn is where creativity thrives. From the Brooklyn
+						Bridge to vibrant neighborhoods like Williamsburg, Brooklyn is a cultural hub full of art,
+						music,
+						and food. Discover the charm of historic brownstones, cozy coffee shops, and vibrant street art.
+						Whether it’s winter markets or jazz clubs, Brooklyn offers something unique at every corner.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid" style="background-color: #3E1855">
+			<div class="row d-flex align-items-center justify-content-center py-4">
+				<h1 class="text-center py-2" style="color: #fff5e4;">Hudson River Waterfront: A Peaceful Getaway</h1>
+				<img src="contentimgs/cntntimg6.jpg" alt="" style="width: 50%;">
+
+				<div class="col-8 mt-4">
+					<p class="text-center" style="color: #fff5e4;">Escape the hustle and bustle of the city with a visit
+						to
+						the scenic Hudson River Waterfront. Explore charming towns like Hoboken, with their holiday
+						lights
+						and festive markets, or take a leisurely bike ride along the waterfront. For a memorable
+						experience,
+						take a ferry to Ellis Island and explore New York's rich history.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid" style="background-color: #fff5e4;">
+			<div class="row d-flex align-items-center justify-content-center py-4">
+				<h1 class="text-center py-2" style="color: black;">Upper East Side: Luxury and Culture</h1>
+				<img src="contentimgs/cntntimg7.jpg" alt="" style="width: 50%;">
+
+				<div class="col-8 mt-4">
+					<p class="text-center" style="color: black;">The Upper East Side is known for its upscale living,
+						world-class museums, and stunning architecture. Take a leisurely walk through Central Park,
+						explore
+						the Metropolitan Museum of Art, or shop along Madison Avenue. This elegant neighborhood offers a
+						refined experience that is perfect for those looking to immerse themselves in the city’s rich
+						culture.</p>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footCont">
+			<div class="container-fluid py-2 d-flex align-items-center justify-content-center"
+				style="color: #fff5e4; height: 130px; background-color: #3E1855;">
+				<p class="footText text-center">Copyright © 2024 Marriott International, Inc. All Rights Reserved.
+					Marriott Proprietary Information.</p>
+			</div>
+		</footer>
+
 	</section>
 
-	<!--Uses JQuery-->
+	<!-- Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/parallax.js"></script>
 
